@@ -11,6 +11,7 @@ GEM
     inflecto (0.0.2)
     json (2.6.3)
     jwt (2.7.0)
+    mini_portile2 (2.8.6)
     multi_json (1.15.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
@@ -24,7 +25,8 @@ GEM
       rack
     rainbow (3.1.1)
     regexp_parser (2.8.0)
-    rexml (3.2.5)
+    rexml (3.2.8)
+      strscan (>= 3.0.9)
     rubocop (1.48.1)
       json (~> 2.3)
       parallel (~> 1.10)
@@ -53,7 +55,9 @@ GEM
       rack-protection (= 3.0.6)
       sinatra (= 3.0.6)
       tilt (~> 2.0)
-    sqlite3 (1.6.3-x86_64-darwin)
+    sqlite3 (1.6.3)
+      mini_portile2 (~> 2.8.0)
+    strscan (3.1.0)
     temple (0.10.1)
     thor (1.2.2)
     tilt (2.1.0)
@@ -61,6 +65,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   bcrypt
